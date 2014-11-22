@@ -27,12 +27,12 @@ very little effort.
 
 The `Makefile` in this repo has tasks to download the data files from the internet, perform the analysis and
 test it against a predefine result. It also contains tasks to update the documentation, including the one you
-are reading and the CodeBook.md file, which contains the definitions of the many variables that are part of this
+are reading and the `CodeBook.md` file, which contains the definitions of the many variables that are part of this
 analysis. 
 
 ```{shell eval=FALSE}
 $ make depedencies # install the dependant packages: reshape2, knitr and digest
-$ make all # executes each script in turn, get_data.R, run_analysis.R
+$ make all # executes each script in turn, `get_data.R`, `run_analysis.R`
 ```
 
 After `make` is done you should be able to see the results as a text file in the working directory with a filename
