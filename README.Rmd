@@ -7,9 +7,17 @@ and testing the results against a predefined value.
 The final objective of the assignment is to:
 > Create a tidy data set with the average of each variable for each activity and each subject.
 
-Here is a description of the files in this repository
+Here is a description of the main files in this repository from which you can reproduce all others.
 ```{r echo=FALSE}
-kable(list.files(), col.names=c("files"), row.names=TRUE)
+desc <- c("RStudio project file",
+          "The source that generates the CodeBook.md file",
+          "R script that downloads the necessary data files",
+          "Defines the several tasks that can be executed to reproduce the analysis",
+          "The source that generates this README.md file",
+          "The actual analysis script",
+          "A script that tests the output file from the analysis against an expected value",
+          "A file listing all the variables present in the resulting analysis output")
+kable(data.frame(list.files(), desc), col.names=c("File","Description"), row.names=TRUE)
 ```
 
 ## Reproducing the analysis
@@ -18,7 +26,7 @@ your choice of Operating system you should be able to run the make tasks to get 
 very little effort.
 
 The `Makefile` in this repo has tasks to download the data files from the internet, perform the analysis and
-test it against a predefine result. It also contains tasks to update the documentation, including the one you
+test it against a predefine result and a few others. It also contains tasks to update the documentation, including the one you
 are reading and the `CodeBook.md` file, which contains the definitions of the many variables that are part of this
 analysis. 
 
@@ -29,3 +37,6 @@ $ make all # executes each script in turn, `get_data.R`, `run_analysis.R`
 
 After `make` is done you should be able to see the results as a text file in the working directory with a filename
 of `tidydata.txt`
+
+Please, note that the repository does not contain the raw data, but it does contain a script that downloads that for you. Also
+worth noting is that some files are generated dynamically, this includs the README.md you are reading and CodeBook.md.
