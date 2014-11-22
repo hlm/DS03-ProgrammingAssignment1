@@ -6,8 +6,15 @@ The repo contains R scripts capable of downloading the required data files, perf
 and testing the results against a predefined value.
 The final objective of the assignment is to:
 > Create atidy data set with the average of each variable for each activity and each subject.
+The following files are part of this repository
 
-Here is a description of the files in this repository
-```{r echo=FALSE}
-kable(list.files(), col.names=c("files"), row.names=TRUE)
-```
+|   |files             |
+|:--|:-----------------|
+|1  |assignment1.Rproj |
+|2  |CodeBook.Rmd      |
+|3  |get_data.R        |
+|4  |Makefile          |
+|5  |README.Rmd        |
+|6  |run_analysis.R    |
+|7  |test_result.R     |
+|8  |variables.txt     |
