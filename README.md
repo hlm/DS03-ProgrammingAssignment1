@@ -8,6 +8,7 @@ The final objective of the assignment is to:
 > Create atidy data set with the average of each variable for each activity and each subject.
 
 Here is a description of the files in this repository
+
 |   |files             |
 |:--|:-----------------|
 |1  |assignment1.Rproj |
