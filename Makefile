@@ -1,13 +1,25 @@
-all: dependencies
+all: analysis test doc
 
-clean:
-	rm -rf data
+clean: clean-data clean-doc clean-result
+
+clean-doc:
 	rm -f README.md
-	rm -rf "UCI HAR Dataset"
+	rm -f CodeBook.md
+
+clean-result:
 	rm -rf tidydata.txt
+
+clean-data:
+	rm -rf data
+	rm -rf "UCI HAR Dataset"
 
 README.md:
 	Rscript -e "library(knitr); knit('README.Rmd')"
+
+CodeBook.md:
+	Rscript -e "library(knitr); knit('CodeBook.Rmd')"
+
+doc: README.md CodeBook.md
 
 download:
 	Rscript get_data.R
@@ -15,9 +27,9 @@ download:
 analysis: download
 	Rscript run_analysis.R
 
-test: 
+test:
 	Rscript test_result.R
 
 dependencies:
-	Rscript -e "install.packages(c('reshape2', 'digest'), repos='http://cran.us.r-project.org')"
+	Rscript -e "install.packages(c('reshape2', 'digest', 'knitr'), repos='http://cran.us.r-project.org')"
 	
