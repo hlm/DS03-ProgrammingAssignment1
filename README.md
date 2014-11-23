@@ -2,6 +2,7 @@
 ## Getting and Cleaning Data
 > WARNING: If the file you are seeing has the .Rmd extension you should go to [README.md](https://github.com/hlm/DS03-ProgrammingAssignment1/blob/master/README.md)
 
+
 > NOTE: This repo does not contain the raw data, it has a script that downloads and unzips the data into the current working directory
 
 This repository holds a project that tries to fulfill the assinged objectives on the 
@@ -11,7 +12,7 @@ and testing the results against a predefined value.
 The final objective of the assignment is to:
 > Create a tidy data set with the average of each variable for each activity and each subject.
 
-Here is a description of the main files in this repository from which you can reproduce all others.
+Here is a description table of the main files in this repository from which you can reproduce all others.
 
 |   |File              |Description                                                                     |
 |:--|:-----------------|:-------------------------------------------------------------------------------|
@@ -32,10 +33,10 @@ tab (close to the Environment tab where all the variables are shown).
 
 The `Makefile` in this repo has tasks to download the data files from the internet, perform the analysis and
 test it against a predefined result. It also contains tasks to clean up your local clone of the repo, 
-update the documentation, including the one you are reading and the `CodeBook.md` file, which contains 
-the definitions of the many variables that are part of this analysis. 
+update the documentation, including the one you are reading and the [`CodeBook.md`](https://github.com/hlm/DS03-ProgrammingAssignment1/blob/master/CodeBook.md) file, which contains the definitions of the many variables that are part of this analysis. 
 
-To run make on the command line you can invoke the command along side the task name you want to execute, like so:
+To run make on the command line, make sure you are in the correct directory and then you can invoke the command along 
+side the task name you want to execute, like so:
 
 ```{shell eval=FALSE}
 $ make depedencies # install the dependant packages: reshape2, knitr and digest
@@ -44,20 +45,20 @@ $ make all # executes each script in turn, `get_data.R`, `run_analysis.R`
 
 If you are using `make` from RStudio, it is even easier: just click on the **Build All** button on the **Build** tab. Similarly,
 you may clean your local repo, deleting the raw data, the result data and the generated documentation by, at the same tab in
-RStudio, clicking on **More** and then **Clean All**. Its very common practice to **Clean and Rebuild**, so there is also
+RStudio, clicking on **More -> Clean All**. Its very common practice to **Clean and Rebuild**, so there is also
 a choice for that in the RStudio.
 
 After `make` is done you should be able to see the results as a text file in the working directory with a filename
 of `tidydata.txt`
 
 Please, note that the repository does not contain the raw data, but it does contain a script that downloads that for you. Also
-worth noting is that some files are generated dynamically, this includes the README.md you are reading and CodeBook.md.
+worth noting is that some files are generated dynamically, this includes the `README.md` you are reading and `CodeBook.md`.
 
 You can also run tasks individually, such as `make download` or `make analysis`, which are pretty self explanatory.
 
 Note that the downloaded zip file will be stored in a data subdirectory in the current project directory. The directory will
 be created if it does not exist. The expanded data files are going to be unzip in the current working directory, this behaviour
-can be changing by defining the `extractDir` variable in the `get_data.R` and `run_analysis.R` files. The download is around 60MB
+can be changed by defining the `extractDir` variable in the `get_data.R` and `run_analysis.R` files. The download is around 60MB
 so depending on your internet connection speed, you may need to be patient with it.
 
 ## Running it manually
