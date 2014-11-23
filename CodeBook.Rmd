@@ -1,5 +1,6 @@
 # CodeBook
-## Coursera Data Science Specialization - Getting and Cleaning Data
+## Coursera Data Science Specialization
+### Getting and Cleaning Data
 Describes the variables, the data, and any transformations or work that you performed to clean up the data
 
 ## Raw data
@@ -86,9 +87,16 @@ by the name `tidyDataSet2`, this variable was then written to disk as a text fil
 
 Beyond the analysis steps, I create a quick test function that is able to compare the expected md5 hash for the `tidydata.txt` against
 the output of the analysis. Understandly, I could have the wrong answer to begin with and my hash would not be worth anything, however
-being able to capture a hash of my first, hopefully correct, answer and then make changes to the analysis script knowning that if I broke
-anything that was "working before" was a great help and good overall software development practice. This test script is 
+being able to capture a hash of my first, hopefully correct, answer and then make changes to the analysis script knowning that if I broke anything that was "working before" was a great help and good overall software development practice. This test script is 
 called `test_result.R` and contains the a hardcoded md5 hash of what I think is the right answer.
+
+```{r}
+library(digest)
+expectedMd5 <- "8161c06dbe59f0131a5840917d275feb"
+data <- read.table("tidydata.txt")
+md5 <- digest(data, serialize=TRUE)
+if(identical(md5,expectedMd5)) print(paste('Test PASSED', md5))
+```
 
 ## Variables
 Bellow you will find an exhaustive list of the variables found in the tidy data set resulting from the analysis performed by `run_analysis.R`
