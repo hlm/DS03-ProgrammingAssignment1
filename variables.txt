@@ -1,0 +1,82 @@
+variable,Domain,Description
+subject                         , NA,The identifier of the subject who carried out the experiment
+activityLabel                   , NA,The activity name for this observation
+tBodyAcc-mean()-X               , Time,The mean of Body Acceleration on the x-axis
+tBodyAcc-mean()-Y               , Time,The mean of Body Acceleration on the y-axis
+tBodyAcc-mean()-Z               , Time,The mean of Body Acceleration on the z-axis
+tBodyAcc-std()-X                , Time,The standard deviation of Body Acceleration on the x-axis
+tBodyAcc-std()-Y                , Time,The standard deviation of Body Acceleration on the y-axis
+tBodyAcc-std()-Z                , Time,The standard deviation of Body Acceleration on the z-axis
+tGravityAcc-mean()-X            , Time,The mean of Gravity Acceleration on the x-axis
+tGravityAcc-mean()-Y            , Time,The mean of Gravity Acceleration on the y-axis
+tGravityAcc-mean()-Z            , Time,The mean of Gravity Acceleration on the z-axis
+tGravityAcc-std()-X             , Time,The standard deviation of Gravity Acceleration on the x-axis
+tGravityAcc-std()-Y             , Time,The standard deviation of Gravity Acceleration on the y-axis
+tGravityAcc-std()-Z             , Time,The standard deviation of Gravity Acceleration on the z-axis
+tBodyAccJerk-mean()-X           , Time,mean Body linear acceleration derived in time (Jerk) on the x-axis
+tBodyAccJerk-mean()-Y           , Time,mean Body linear acceleration derived in time (Jerk) on the y-axis
+tBodyAccJerk-mean()-Z           , Time,mean Body linear acceleration derived in time (Jerk) on the z-axis
+tBodyAccJerk-std()-X            , Time,standard deviation of Body linear acceleration derived in time (Jerk) on the x-axis
+tBodyAccJerk-std()-Y            , Time,standard deviation of Body linear acceleration derived in time (Jerk) on the y-axis
+tBodyAccJerk-std()-Z            , Time,standard deviation of Body linear acceleration derived in time (Jerk) on the z-axis
+tBodyGyro-mean()-X              , Time, mean of body angular velocity on the x-axis
+tBodyGyro-mean()-Y              , Time, mean of body angular velocity on the y-axis
+tBodyGyro-mean()-Z              , Time, mean of body angular velocity on the z-axis
+tBodyGyro-std()-X               , Time, standard deviation of body angular velocity on the x-axis
+tBodyGyro-std()-Y               , Time, standard deviation of body angular velocity on the y-axis
+tBodyGyro-std()-Z               , Time, standard deviation of body angular velocity on the z-axis
+tBodyGyroJerk-mean()-X          , Time, mean jerk signal of body angular velocity on the x-axis
+tBodyGyroJerk-mean()-Y          , Time, mean jerk signal of body angular velocity on the y-axis
+tBodyGyroJerk-mean()-Z          , Time, mean jerk signal of body angular velocity on the z-axis
+tBodyGyroJerk-std()-X           , Time, standard deviation jerk signal (angular velocity devired in time) of body angular velocity on the x-axis
+tBodyGyroJerk-std()-Y           , Time, standard deviation jerk signal (angular velocity devired in time) of body angular velocity on the y-axis
+tBodyGyroJerk-std()-Z           , Time, standard deviation jerk signal (angular velocity devired in time) of body angular velocity on the z-axis
+tBodyAccMag-mean()              , Time, mean body linear acceleration magnitude calculated using the Euclidean norm
+tBodyAccMag-std()               , Time, standard deviation of body linear acceleration magnitude calculated using the Euclidean norm
+tGravityAccMag-mean()           , Time, mean gravity linear acceleration magnitude calculated using the Euclidean norm
+tGravityAccMag-std()            , Time, standard deviation of gravity linear acceleration magnitude calculated using the Euclidean norm
+tBodyAccJerkMag-mean()          , Time, mean body linear acceleration jerk magnitude calculated using the Euclidean norm
+tBodyAccJerkMag-std()           , Time, standard deviation of body linear acceleration jerk magnitude calculated using the Euclidean norm
+tBodyGyroMag-mean()             , Time, mean body angular velocity magnitude calculated using the Euclidean norm
+tBodyGyroMag-std()              , Time, standard deviation body angular velocity magnitude calculated using the Euclidean norm
+tBodyGyroJerkMag-mean()         , Time, mean body angular velocity jerk magnitude
+tBodyGyroJerkMag-std()          , Time, standard deviation body angular velocity jerk magnitude
+fBodyAcc-mean()-X               , Frequency,mean body acceleration on the x-axis
+fBodyAcc-mean()-Y               , Frequency,mean body acceleration on the y-axis
+fBodyAcc-mean()-Z               , Frequency,mean body acceleration on the z-axis
+fBodyAcc-std()-X                , Frequency,standard deviation body acceleration on the x-axis
+fBodyAcc-std()-Y                , Frequency,standard deviation body acceleration on the y-axis
+fBodyAcc-std()-Z                , Frequency,standard deviation body acceleration on the z-axis
+fBodyAcc-meanFreq()-X           , Frequency,Weighted average of the frequency components on the x-axis
+fBodyAcc-meanFreq()-Y           , Frequency,Weighted average of the frequency components on the y-axis
+fBodyAcc-meanFreq()-Z           , Frequency,Weighted average of the frequency components on the z-axis
+fBodyAccJerk-mean()-X           , Frequency,mean body acceleration jerk on the x-axis
+fBodyAccJerk-mean()-Y           , Frequency,mean body acceleration jerk on the y-axis
+fBodyAccJerk-mean()-Z           , Frequency,mean body acceleration jerk on the z-axis
+fBodyAccJerk-std()-X            , Frequency,standard deviation body acceleration jerk on the x-axis
+fBodyAccJerk-std()-Y            , Frequency,standard deviation body acceleration jerk on the y-axis
+fBodyAccJerk-std()-Z            , Frequency,standard deviation body acceleration jerk on the z-axis
+fBodyAccJerk-meanFreq()-X       , Frequency,Weighted average of the frequency components on the x-axis
+fBodyAccJerk-meanFreq()-Y       , Frequency,Weighted average of the frequency components on the y-axis
+fBodyAccJerk-meanFreq()-Z       , Frequency,Weighted average of the frequency components on the z-axis
+fBodyGyro-mean()-X              , Frequency,mean of body angular velocity on the x-axis
+fBodyGyro-mean()-Y              , Frequency,mean of body angular velocity on the y-axis
+fBodyGyro-mean()-Z              , Frequency,mean of body angular velocity on the z-axis
+fBodyGyro-std()-X               , Frequency,standard deviation of body angular velocity on the x-axis
+fBodyGyro-std()-Y               , Frequency,standard deviation of body angular velocity on the y-axis
+fBodyGyro-std()-Z               , Frequency,standard deviation of body angular velocity on the z-axis
+fBodyGyro-meanFreq()-X          , Frequency,Weighted average of the angular velocity frequency components on the x-axis
+fBodyGyro-meanFreq()-Y          , Frequency,Weighted average of the angular velocity frequency components on the y-axis
+fBodyGyro-meanFreq()-Z          , Frequency,Weighted average of the angular velocity frequency components on the z-axis
+fBodyAccMag-mean()              , Frequency,body linear acceleration magnitue mean
+fBodyAccMag-std()               , Frequency,body linear acceleration magnitue standard deviation
+fBodyAccMag-meanFreq()          , Frequency,weighted average of the body's linear acceleration frequency components
+fBodyBodyAccJerkMag-mean()      , Frequency,mean of the body acceleration jerk
+fBodyBodyAccJerkMag-std()       , Frequency,standard deviation of the body acceleration jerk
+fBodyBodyAccJerkMag-meanFreq()  , Frequency,weighted average of the body acceleration jerk
+fBodyBodyGyroMag-mean()         , Frequency,mean of body angular velocity magnitude
+fBodyBodyGyroMag-std()          , Frequency,standard deviation of body angular velocity magnitude
+fBodyBodyGyroMag-meanFreq()     , Frequency,weighted average of angular velocity magnitude
+fBodyBodyGyroJerkMag-mean()     , Frequency,mean of angular velocity jerk
+fBodyBodyGyroJerkMag-std()      , Frequency,standard deviation of angular velocity jerk
+fBodyBodyGyroJerkMag-meanFreq() , Frequency,weighted average of angular velocity jerk magnitude
