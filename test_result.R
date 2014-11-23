@@ -1,6 +1,6 @@
 library(digest)
 
-expectedMd5 <- "dd66b0e6216a3d831e0f0c0bb5b932ad"
+expectedMd5 <- "8161c06dbe59f0131a5840917d275feb" # old: "dd66b0e6216a3d831e0f0c0bb5b932ad"
 
 data <- read.table("tidydata.txt")
 
