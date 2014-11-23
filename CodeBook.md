@@ -39,7 +39,7 @@ original definitions found in the raw training and test acitivity datasets, e.g.
 
 Still in step three, to make sure that the new factor variable was equivalent to the original 
 numeric coding of the raw data, I used a table to inspect the distribution of the factors and the original 
-activity numeric codes as shown bellow
+activity numeric codes as shown bellow:
 
 
 
@@ -77,7 +77,26 @@ table(mergedActData)
 ##        6   1944
 ```
 
+In step four subject data is merged across the training and test datasets using the merge function introduced before. The subject
+data is numerical and fairly trivial, so no further processing was necessary of that particular data. Finally, a new merge was performed,
+this time a merge of collumns using `cbind` combining the datasets composed of the actual measurements, the activity names and
+the subject for each observation. A total of 10299 observation were merged from the training and test datasets.
+
+Step five concluded the analysis by aggregating all the 81 variables by subject and activity using the `mean` function. The approach
+to aggregate the data took advantage of the `reshape2` package by first meling the dataset using subject and activity name as ids
+then casting the data back to wide format while applying the `mean` function. The reshaped data was stored in an entire new variable
+by the name `tidyDataSet2`, this variable was then written to disk as a text file named `tidydata.txt` by using the 
+`write.table()` function.
+
+Beyond the analysis steps, I create a quick test function that is able to compare the expected md5 hash for the `tidydata.txt` against
+the output of the analysis. Understandly, I could have the wrong answer to begin with and my hash would not be worth anything, however
+being able to capture a hash of my first, hopefully correct, answer and then make changes to the analysis script knowning that if I broke
+anything that was "working before" was a great help and good overall software development practice. This test script is 
+called `test_result.R` and contains the a hardcoded md5 hash of what I think is the right answer.
+
 ## Variables
+Bellow you will find an exhaustive list of the variables found in the tidy data set resulting from the analysis performed by `run_analysis.R`
+
 
 |variable                         |Domain     |Description                                                                                               |
 |:--------------------------------|:----------|:---------------------------------------------------------------------------------------------------------|
