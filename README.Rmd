@@ -39,4 +39,22 @@ After `make` is done you should be able to see the results as a text file in the
 of `tidydata.txt`
 
 Please, note that the repository does not contain the raw data, but it does contain a script that downloads that for you. Also
-worth noting is that some files are generated dynamically, this includs the README.md you are reading and CodeBook.md.
+worth noting is that some files are generated dynamically, this includes the README.md you are reading and CodeBook.md.
+
+You can also run tasks individually, such as `make download` or `make analysis`, which are pretty self explanatory.
+
+Note that the downloaded zip file will be stored in a data subdirectory in the current project directory. The directory will
+be created if it does not exist. The expanded data files are going to be unzip in the current working directory, this behaviour
+can be changing by defining the `extractDir` variable in the `get_data.R` and `run_analysis.R` files.
+
+## Running it manually
+In case you do not want or can't use make, here is how you can run everything manually
+
+1. Open an R shell or RStudio
+2. Make sure your current working directory is this repo
+3. Source the `get_data.R` file to download and unzip the required data files
+  + `source("get_data.R")`
+4. Source the `run_analysis.R` file to run the analysis. The result file named `tidydata.txt` should be created in the working directory
+  + `source("run_analysis")`
+5. Optionally compare the content of the generatede `tidydata.txt` with the expected content by sourcing `test_result.R`
+  + `source("test_result.R")`
