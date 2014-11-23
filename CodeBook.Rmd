@@ -1,6 +1,8 @@
 # CodeBook
 ## Coursera Data Science Specialization
 ### Getting and Cleaning Data
+> WARNING: If the file you are seeing has the .Rmd extension you should go to [CodeBook.md](https://github.com/hlm/DS03-ProgrammingAssignment1/blob/master/CodeBook.md)
+
 Describes the variables, the data, and any transformations or work that you performed to clean up the data
 
 ## Raw data

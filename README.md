@@ -1,5 +1,7 @@
 # Coursera Data Science Specialization
 ## Getting and Cleaning Data
+> WARNING: If the file you are seeing has the .Rmd extension you should go to [README.md](https://github.com/hlm/DS03-ProgrammingAssignment1/blob/master/README.md)
+
 This repository holds a project that tries to fulfill the assinged objectives on the 
 Coursera Data Science Specialization - Getting and Cleaning Data course from the John Hopinks University
 The repo contains R scripts capable of downloading the required data files, performing the desired analysis
@@ -9,9 +11,16 @@ The final objective of the assignment is to:
 
 Here is a description of the main files in this repository from which you can reproduce all others.
 
-```
-## Error in data.frame(list.files(), desc): arguments imply differing number of rows: 11, 8
-```
+|   |File              |Description                                                                     |
+|:--|:-----------------|:-------------------------------------------------------------------------------|
+|1  |assignment1.Rproj |RStudio project file                                                            |
+|2  |CodeBook.Rmd      |The source that generates the CodeBook.md file                                  |
+|3  |get_data.R        |R script that downloads the necessary data files                                |
+|4  |Makefile          |Defines the several tasks that can be executed to reproduce the analysis        |
+|5  |README.Rmd        |The source that generates this README.md file                                   |
+|6  |run_analysis.R    |The actual analysis script                                                      |
+|7  |test_result.R     |A script that tests the output file from the analysis against an expected value |
+|8  |variables.txt     |A file listing all the variables present in the resulting analysis output       |
 
 ## Reproducing the analysis
 I have made an attempt to make it very easy to reproduce the analysis of this repo. If you have `make` at 
@@ -59,14 +68,9 @@ at least the `reshape2` package, you can do that whithin R with `install.package
 ```r
 source("get_data.R")
 source("run_analysis.R")
-source("test_restul.R")
+source("test_result.R")
 ```
 
 ```
-## Warning in file(filename, "r", encoding = encoding): cannot open file
-## 'test_restul.R': No such file or directory
-```
-
-```
-## Error in file(filename, "r", encoding = encoding): cannot open the connection
+## [1] "Test PASSED 8161c06dbe59f0131a5840917d275feb"
 ```
